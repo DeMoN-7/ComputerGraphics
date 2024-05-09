@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<conio.h>
+#include<graphics.h>
+void main(){
+int gd=DETECT,gm;
+initgraph(&gd,&gm,"c:\\turb oc3\\bgi");
+line(300,0,300,500);
+line(0,250,600,250);
+float x1=40,x2=80,x3=80,x4=40,y1=20,y2=20,y3=60,y4=60;
+line(x1+300,y1+250,x2+300,y2+250);
+line(x2+300,y2+250,x3+300,y3+250);
+line(x3+300,y3+250,x4+300,y4+250);
+line(x4+300,y4+250,x1+300,y1+250);
+setcolor(RED);
+float tx=3,ty=3;
+line(x1*tx+300,y1*ty+250,x2*tx+300,y2*ty+250);
+line(x2*tx+300,y2*ty+250,x3*tx+300,y3*ty+250);
+line(x3*tx+300,y3*ty+250,x4*tx+300,y4*ty+250);
+line(x4*tx+300,y4*ty+250,x1*tx+300,y1*ty+250);
+
+getch();
+
+}
